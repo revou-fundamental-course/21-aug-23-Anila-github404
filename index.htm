@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>My Website</title>
+   
+</head>
+<body>
+   <header>
+    <!-- <div class="container">
+    <nav>
+        <a href="https://revou.co">
+        <img src="Logo.jpg" style="border-radius: 45px;"></a>
+        <ul>
+            <li><a href="" class="active">Home</a></li>
+            <li><a href="" class="active">Our Profile</a></li>
+            <li><a href="" class="active">Achievement</a></li>
+            <li><a href="" class="active">Message Us</a></li>
+        </ul>   
+    </nav>
+</div> -->
+<div class="container">
+    <nav class="wrap">
+        <div class="brand">
+            <div class="firstname">SMA</div>
+            <div class="lastname">Revou</div>
+        </div>
+        <ul class="navigation">
+            <li><a style="text-decoration:none" href="index.htm#home" class="active" >home</a></li>
+            <li><a href="ourprofile.html">our profile</a></li>
+            <li><a href="#ourfacilities">our facilities</a></li>
+            <li><a href="#achievement">achievement</a></li>
+            <li><a href="#message">message us</a></li>
+            <li><a href="https://www.revou.co"><img src="Logo.jpg" alt=""></a></li>
+        </ul>   
+    </nav>
+</div>
+   </header>
+
+
+   <main>
+    <section id="home">
+   <div class="banner">
+   <h1>Hai,<span id="namee">Anila</span><br>Welcome to SMA Revou!</h1> 
+   <!-- <h1>Hai,Anila<br>Welcome to SMA Revou!</h1> -->
+   </div>
+   </section>     
+   
+   
+   <!-- ABOUT US CONTENT -->
+   <section class="about">
+    <div class="aboutcontainer">
+        <h3>About Our School</h3>
+        <p><b>Sekolah Menengah Atas Revou</b> yang berada di bawah naungan Yayasan Revou selalu berupaya meningkatkan kualitas pendidikan secara menyeluruh kepada anak didiknya sejak tahun 2020. Hingga saat ini, Yayasan Revou sudah melahirkan 163 sekolah yang tersebar di 15 kota yang ada di 4 provinsi (yaitu) Jawa Barat, DKI Jakarta, Banten dan Lampung.</p>
+    </div>
+   </section>
+
+   <!-- Visi Misi -->
+   <section class="visimisi">
+    <div class="visimisicontainer">
+        <img src="visi.gif" width="100px" height="100px">
+        <p>Sekolah adalah partner orang tua dalam pendidikan anak yang dipercayakan Tuhan, mengusahakan dengan penuh tanggung jawab : pertumbuhan, perkembangan pendidikan, dan pengajaran siswanya secara total, optimal, dan menggunakan pendekatan rasa kekeluargaan.</p>
+        <img src="misi.png.gif" width="100px" height="100px">
+        <p>Menyelenggarakan pendidikan yang tertib, disiplin dan dinamis untuk perkembangan intelektual, sosial emosional, bahasa, moral spiritual dan fisik motorik tiap siswa yang menjalani pendidikan.</p>
+    </div>
+   </section>
+
+   </main>
+
+<!--Fasilitas-->
+    <div class="facilities" id="ourfacilities"> 
+        <div><h1>Our Facilities</h1></div>
+        <div class="img-wrapper">
+        <div id="">
+        <a href="https://www.fiverr.com/">
+        <img src="classroom.jpg" style="height: 250px;width: 250px;border-radius: 100px;margin: 20px;padding: 10px;">
+        <h3 style="text-align: center; text-decoration:none">Classroom Information</h3>
+        </a></div>
+        <div class="img-wrapper">
+        <a href="https://www.google.com/">
+        <img src="teacher.jpg" style="height: 250px;width: 250px;border-radius: 100px;margin: 20px;padding: 10px;">
+        <h3 style="text-align: center;">Teacher Information</h3>
+        </a></div>
+        <div class="img-wrapper">
+        <a href="https://www.facebook.com/">
+        <img src="sport field.png" style="height: 250px;width: 250px;border-radius: 100px;margin: 20px;padding: 10px;">
+        <h3 style="text-align: center;">Sport Field Information</h3>
+        </a></div>
+    </div>
+    </div>
+    </div>  
+    
+    <br>
+ 
+    <div class="card-row" id="achievement">
+        <h1>Achievement</h1>
+        <div class="card-column">
+            <div class="card">
+                <img src="budaya.png">
+                <h3 style="text-align: center">Culture</h3>
+                <p>Juara 1 Seni dan Tari Tingkat Kota</p>
+                <p>Juara 3 Seni dan Tari Tingkat Nasional</p>
+            </div>
+        </div>
+        <div class="card-column">
+            <div class="card">
+                <img src="teknologi.png">
+                <h3>Culture</h3>
+                <p>Juara 1 Aplikasi Sekolah Tingkat Kota</p>
+                <p>Juara 3 Data Competition</p>
+            </div>
+        </div>
+        <div class="card-column">
+            <div class="card">
+                <img src="go green.png">
+                <h3>Lingkungan</h3>
+                <p>Juara Adiwiyata</p>
+                <p>Juara 2 Lingkungan Bersih dan Indah</p>
+            </div>
+        </div>
+        <div class="card-column">
+            <div class="card">
+                <img src="champion.png">
+                <h3>Culture</h3>
+                <p>Juara 1 Olimpiade Internasional</p>
+                <p>Juara 1 Olimpiade Matematika Nasional</p>
+            </div>
+        </div>
+    </div>
+
+<!--Formulir-->
+    <div class="backgroundForm"> 
+    <section id="message">
+    <h1>Message Us</h1>   
+    </section>   
+    <form name="myForm" action="#popup" onsubmit="return validateForm()" method="post">
+    <label for="nama">Nama:</label>
+    <input name="nama" id="nama" type="text" min="5" max="10" placeholder="Nama">
+    
+    <br><br>
+    <label for="tanggallahir">Tanggal Lahir:</label>
+    <input name="tanggallahir" id="tanggallahir" type="date">
+    
+    <br><br>
+    <label for="usia">Usia:</label>
+    <input name="usia" id="usia" type="number" min="14" max="20">
+
+    <br><br>
+    <label for="jenis kelamin">Jenis kelamin:</label>
+    <input name="jeniskelamin" type="radio" id="perempuan" name="jenis kelamin" value="Perempuan">
+    <label for="perempuan">Perempuan</label>
+    <input name="jeniskelamin" type="radio" id="laki-laki" name="jenis kelamin" value="Laki-Laki">
+    <label for="laki-laki">Laki-Laki</label><br>
+   
+    <!-- <label for="jurusan">Jurusan:</label>
+     <select>
+    <optgroup label="IPA">
+    <option>Biologi</option>
+    <option>Fisika</option>
+    </optgroup>
+    <optgroup label="IPS">
+    <option>Geografi</option>
+    <option>Sejarah</option>
+    </optgroup>
+    </select>  -->
+    <br>
+    <label for="pesan">Pesan:</label>
+    <textarea id="pesan" name="pesan" rows="4" cols="50" maxlength="100" placeholder="Silahkan Diisi Max.100 Karakter"></textarea>
+    <br><br>
+    <input class="buttonreset" type="reset" value="Reset"><br><br>
+    <input class="buttonsubmit" type="submit" value="Submit"><br><br> 
+    <div id="popup">
+    	<div class="window">
+        	<a href="#message" class="close-button" title="Close">X</a>
+            <h2 style="text-align: center">Terima Kasih Pesan Anda Akan Segera Direspon</h2>
+            <h4>Nama : Anila</h4>
+            <h4>Tanggal Lahir : 08/06/1997 </h4>
+            <h4>Jenis Kelamin : Perempuan</h4>
+            <h4>Pesan: Tingkatkan Lagi Materi Pembelajarannya</h4>
+        </div>
+
+    </div>
+    </form>
+    </div>
+
+    <script src="script.js"></script> 
+</body>
+<hr>
+<footer>
+    <p>Created By Revou</p>
+</footer>
+</html>

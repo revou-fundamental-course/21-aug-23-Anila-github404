@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Profile</title>
+  <style>
+    * {box-sizing: border-box;}
+
+    /* untuk mobile */
+    @media only screen and (max-width: 600px){
+    .container {
+      flex-direction: column;
+      width: 100%;
+
+    }
+    .navigation{
+      flex-direction: column;
+      width: 100%;
+    }
+    }
+
+    /* body */
+    body {
+      font-family: Verdana, sans-serif;
+      margin: auto;
+      background-color: white;
+    }
+    .container {
+      background-color: rgb(240, 144, 84);
+      display: block;
+    }
+
+    /* Topik */
+    #about {
+      margin: 20px;
+      padding: 10px;
+      background-color: rgb(212, 147, 74);
+      display: block;
+    }
+    #pengembangan {
+      margin: 20px;
+      padding: 10px;
+      background-color:  rgb(212, 147, 74);
+      display: block;
+    }
+    #keunggulan {
+      margin: 20px;
+      padding: 10px;
+      background-color:rgb(227, 169, 104);
+      display: block;
+    }
+    #kontak {
+      margin: 20px;
+      padding: 10px;
+      background-color: rgb(227, 169, 104);
+      display: block;
+    }
+    
+    /* Slideshow container */
+    .content-slide {
+      max-width: 1000px;
+      position: relative;
+      margin: auto;
+    }
+    .imgslide {
+      display: none;
+    }
+    img {
+      vertical-align: middle;
+      width:100%;height: 400px;
+    }
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 40%;
+      width: auto;
+      padding: 16px;
+      color: rgb(255, 254, 224);
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+      background-color: rgba(0, 0, 0, 0.8); 
+    }
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+    .pre:hover,.next:hover {
+      background-color: rgba(255, 255, 255, 0.8);
+      color: rgb(0, 0, 0);
+    }
+    .text {
+      color: #fafafa;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      text-align: center;
+    }
+    .content-slide .numberslide {
+      color: #ffffff;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+    from {opacity: .4;}
+    to {opacity: 1;}
+}
+@keyframes fade {
+    from {opacity: .4;}    
+    to {opacity: 1;}
+}
+.container .page {
+    text-align: center;
+    padding-top: 20px;
+}
+.page .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    border-radius: 50%;
+}
+.page .active,
+.page .dot:hover {
+    background-color: #ce0000;
+}
+
+/* Nav Bar */
+.container-nav {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background: rgb(245, 166, 76);
+}
+.wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    padding: 15px;
+    width: 100%;
+    height: 80px;    
+}
+.brand {
+    display: flex;
+    flex-direction: row;
+    font-size: 1.5em;
+    padding: 15px;
+    text-transform: capitalize;
+}
+.firstname {
+    color: rgb(217, 93, 59);
+    font-weight: 700;
+}
+.navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navigation > li {
+    list-style-type: none;
+    padding: 15px;
+}
+.navigation>li>a {
+color: black;
+font-size: 20px;
+text-decoration: none;
+text-transform: capitalize;
+}
+h1 {
+  margin: 0;
+}
+nav ul {
+  list-style: none;
+  margin: 0;}
+
+  /* footer */
+footer>p {
+text-align: end;
+padding: 20px;
+}
+
+</style>  
+</head>
+
+<body>
+<!-- Nav Bar -->
+  <header>
+    <div class="container-nav">
+    <nav class="wrap">
+    <div class="brand">
+    <div class="firstname">
+      <a href="index.htm" style="text-decoration: none;">SMA Revou</a>
+    </div>
+    </div>
+    <ul class="navigation">
+        <li><a href="#about">Tentang Saya</a></li>
+        <li><a href="#keunggulan">Keunggulan</a></li>
+        <li><a href="#pengembangan">Pengembangan Organisasi</a></li>
+        <li><a href="#kontak">Kontak</a></li>
+    </ul> 
+    </nav>
+    </div>
+  </header>
+  
+<!-- Slide Show  -->
+  <main>
+    <div class="container">
+    <div class="content-slide">
+    <div class="imgslide fade">
+    <div class="numberslide"></div>
+      <img src="student.jpg" alt="">
+    </div>
+
+    <div class="imgslide fade">
+      <div class="numberslide"></div>
+      <img src="lab.jpg" alt="">
+    </div>
+
+    <div class="imgslide fade">
+      <div class="numberslide"></div>
+      <img src="google classroom.png" alt="">
+    </div>
+
+    <a class="prev" onClick="nextslide(-1)">&#10094;</a>
+    <a class="next" onClick="nextslide(1)">&#10095;</a> 
+    </div>
+
+    <div class="page">
+      <span class="dot" onClick="dotslide(1)"></span>
+      <span class="dot" onClick="dotslide(2)"></span>
+      <span class="dot" onClick="dotslide(3)"></span>
+    </div>
+    </div>
+
+  <script>
+    var slideIndex = 1;
+    showSlide(slideIndex);
+
+    function plusDivs(n) {
+    showSlide (slideIndex += n);
+    }
+
+    function nextslide(n){
+    showSlide(slideIndex += n);
+    }
+
+    function dotslide(n){
+    showSlide(slideIndex = n);
+    }
+
+    function showSlide(n) {
+    var i;
+    var slides = document.getElementsByClassName("imgslide");
+    var dot = document.getElementsByClassName("dot");
+          
+    if (n > slides.length) {
+    slideIndex = 1
+    }
+
+    if (n < 1) {
+    slideIndex = slides.length;
+    }
+
+    for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+    }
+
+    for (i = 0; i < slides.length; i++) {
+    dot[i].className = dot[i].className.replace(" active", "");
+    }
+
+    slides[slideIndex - 1].style.display = "block";
+    dot[slideIndex - 1].className += " active";
+    }
+      
+    setInterval(() => { plusDivs(1); 
+    }, 1000)    
+  </script>
+
+<!-- Topik -->
+  <section id="about">
+  <h2>Tentang Saya</h2>
+  <p> Selamat datang di SMA Revou Lippo Village, sekolah berbasis teknologi dengan pengalaman lebih dari tiga dekade di bidang pendidikan holistik!. 
+    <br> 
+    Berlokasi di Lippo Village, Tangerang, sekolah kami berada di area seluas 10 hektar dan dilengkapi dengan fasilitas modern yang mendukung kurikulum International kami. 
+    <br>
+    Sebagai salah satu pionir pendidikan teknologi di Indonesia, kami memiliki reputasi unggul dalam bidang teknologi dan telah memberikan dampak positif bagi masyarakat. 
+    <br>
+    Lebih dari sekedar sekolah, kami telah mentransformasi kehidupan ribuan siswa melalui pendidikan holistik.</p>
+  </section>
+
+  <section id="keunggulan">
+  <h2>Keunggulan</h2>
+  <ul>
+    <li>Program Mission Service Learning (MSL) yang memberi kesempatan bagi siswa untuk melayani masyarakat kurang mampu di berbagai daerah terpencil di Indonesia dan luar negeri.</li>
+    <li>Program penelitian ilmiah untuk siswa yang dikenal sebagai Application Science Academy (ASA)</li>
+    <li>Berbagai pilihan kegiatan ekstrakurikuler untuk mengakomodasi minat dan bakat siswa.</li>
+    <li>Program pendukung yang komprehensif bagi siswa, seperti konseling universitas dan karir dari kelas 10, program dukungan Bahasa Inggris, dan masih banyak lagi.</li>
+    <li>Komunitas yang erat yang memprioritaskan pertumbuhan setiap anak melampaui nilai akademik.</li>
+    <li>Ikatan alumni yang kuat.</li>
+  </ul>
+  </section>
+
+  <section id="pengembangan">
+  <h2>Pengembangan Organisasi</h2>
+  <ol type="a">
+    <li>Memperkuat manajemen berbasis sekolah (MBS).</li>
+    <li>Menjalin kerjasama dengan perguruan tinggi negeri, perguruan tinggi kedinasan dan perguruan tinggi swasta favorit.</li>
+    <li>Menjalin kerjasama dengan Polres Mampang, BNN, serta Polsek. </li>
+    <li>Menerapkan sistem manajemen informasi melalui sistem online ( media sosial IG, FB, Twitter dan Whatsapp).</li>
+    <li>Meningkatkan komunikasi dengan stakeholder.</li>
+  </ol>
+  </section>
+
+  <section id="kontak">
+  <h2>Kontak</h2>
+  <p>Email: smarevoujayajaya@gmail.com</p>
+  <p>Telepon: 081234567890</p>
+  <p>Alamat: Jl. Pamulang Utama, Tangerang Selatan</p>
+  </section>
+  </main>
+
+  <hr>
+
+  <!-- footer -->
+  <footer>
+  <p>Created by Revou</p>
+  </footer>
+
+</body>
+</html>
